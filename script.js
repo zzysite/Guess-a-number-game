@@ -9,6 +9,7 @@ btn.onclick = function () {
   var text = document.getElementById('text').value;
   if (text == number) {
     alert("猜对了！");
+    number = Math.floor(Math.random()*1000+1)
   }else if (text > number) {
     alert("猜大了");
   }else if (text < number) {
